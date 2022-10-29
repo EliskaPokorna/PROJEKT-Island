@@ -17,8 +17,385 @@ html { box-sizing: border-box; }
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #f5f5f5;
+	background-color: white;
 	font-size: 16px;
 	line-height: 1.6;
 }
 
+p {
+	padding: 0 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+	padding: 0 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+li {
+	font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 960px) {
+	.obsah {
+		max-width: 960px;
+		margin: auto;
+		background-color: white;
+		box-shadow: 0px 0px 30px -10px rgba(0,0,0,0.75);
+		margin-top: -70px;
+	}
+
+	body {
+		background-color: #f5f5f5;
+	}
+}
+
+/*Hlavička*/
+
+@media screen and (min-width: 0px) {
+
+	.hlavicka {
+		background-image: url(images/island-hlavicka.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		padding: 0 20px;
+		color: white;
+		text-align: center;
+		font-weight: 500;
+		box-shadow: 0px 0px 400px 5px rgba(0,0,0,0.75) inset;
+	}
+
+	h1{
+		font-size: 50px;
+		margin: 0;
+	}
+
+	.jana {
+		color: #C4C2BF;
+		padding-bottom: 30px;
+	}
+
+	.jana::before {
+		content: "";
+		display: block;
+		width: 70px;
+		height: 2px;
+		background-color: #C4C2BF;
+		margin: 10px auto 10px auto;
+	}
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+h1 {
+	font-size: 70px;
+}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.hlavicka {
+		padding: 0 250px;
+	}
+
+	h1 {
+		font-size: 70px;
+	}
+
+	.grid-uvod {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.jana {
+		padding-bottom: 100px;
+	}
+}
+
+
+/*Menu*/
+
+@media screen and (min-width: 0px) {
+
+	.menu {
+		margin: 30px 0 50px 0;
+	}
+
+	.menu ul {
+		padding: 0;
+	}
+
+	.menu li {
+		list-style: none;
+		text-align: center;
+	}
+
+	.menu a {
+		text-decoration: none;
+		color: #a69e9b;
+		text-transform: uppercase;
+		padding: 5px 0;
+		font-size: 14px;
+	}
+
+	.menu li {
+		border-bottom: 1px solid #a69e9b;
+		margin: 10px 30px;
+	}
+
+}
+
+
+@media screen and (min-width: 600px) {
+
+	.menu {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	
+	.menu li {
+		display: inline-block;
+		border-bottom: 0;
+		margin: 0;
+	}
+
+	.polozka + .polozka {
+		border-left: 1px solid #a69e9b;
+	}
+
+	.menu a {
+		display: inline-block;
+		padding: 5px 20px;
+	}
+
+	.menu ul {
+		border-bottom: 1px solid #a69e9b;
+		border-top: 1px solid #a69e9b;
+		margin: 0 20px;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.menu a {
+		display: block;
+		padding: 5px 0;
+	}
+
+	.polozka + .polozka {
+		border-left: 0;
+	}
+
+	.menu ul {
+		border-bottom: 0;
+		border-top: 0;
+	}
+
+	.menu li {
+		display: block;
+		text-align: start;
+		border-bottom: 1px solid #a69e9b;
+		margin: 0 50px 0 30px;
+	}
+
+	.menu {
+		margin-top: 16px;
+	}
+
+	.uvod {
+		padding-top: 30px;
+	}
+}
+
+/*Všechny sekce*/
+
+@media screen and (min-width: 0px) {
+
+	.fotka {
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+		margin-top: 30px;
+	}
+
+	.odkaz {
+		font-size: 12px;
+		margin: 0;
+		text-align: center;
+		color: #a69e9b;
+		margin-bottom: 50px;
+	}
+
+	.odkaz a {
+		color: #a69e9b;
+	}
+
+}
+
+@media screen and (min-width: 0px)  {
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+	} 
+}
+
+@media screen and (min-width: 600px) {
+
+	.images {
+		position: relative;
+	}
+
+	.odkaz-1, .odkaz-2, .odkaz-3 {
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		right: 15px;
+		bottom: 15px;
+		color: white;
+	}
+
+	.odkaz a {
+		color: white;
+	}
+
+	h2 {
+		margin-top: 50px;
+		font-size: 30px;
+	}
+
+}
+
+
+@media screen and (min-width: 960px) {
+
+	.grid-proc {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		padding-left: 30px;
+	}
+
+	.text-proc {
+		grid-column: 1;
+	}
+
+	.grid-musite-videt, .grid-hezci {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+	}
+
+	.podnadpis2 {
+		grid-column: 2;
+	}
+
+	.text-musite-videt {
+		grid-column: 2;
+	}
+
+	.text-hezci {
+		grid-column: 2;
+	}
+
+}
+
+
+/*Pruh pod nadpisem h2*/
+
+@media screen and (min-width: 0px) {
+
+	h2::after {
+		content: "";
+		display: block;
+		width: 70px;
+		height: 5px;
+		background-color: #639ddd;
+		margin: 20px auto 20px -20px;
+	}
+
+}
+
+
+/*Sekce Fotogalerie*/
+
+@media screen and (min-width: 0px) {
+
+	.fotografie {
+		height: auto;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.autor {
+		margin-bottom: 20px;
+	}
+
+	.autor:first-line {
+		font-weight: bold;
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+
+	.nadpis-fotogalerie {
+		margin-top: 70px;
+	}
+
+	.autor {
+		display: none;
+	}
+	
+	.fotogalerie {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 0;
+	}
+
+	.fotografie {
+		display: block;
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.fotogalerie {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+}
+
+
+/*Hover fotogalerie*/
+
+@media screen and (min-width: 600px) {
+
+
+}
+
+
+/*Patička*/
+
+@media screen and (min-width: 0px) {
+
+	.paticka {
+		background-color: #f5f5f5;
+		box-shadow: 0px 10px 40px -25px rgba(0,0,0,0.75) inset;
+	}
+
+	.obsah-paticka {
+		padding: 20px 0 10px 0;
+		color: #a69e9b; 
+	}
+
+	.paticka a {
+		color: #a69e9b;
+	}
+
+}
